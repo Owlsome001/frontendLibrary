@@ -30,7 +30,6 @@
             "styles": [
               "src/styles.scss",
               "src/assets/css/bootstrap.min.css",
-              "src/assets/8vendor/bootstrap-icons/bootstrap-icons.css",
               "src/assets/vendor/aos/aos.css",
               "src/assets/vendor/swiper/swiper-bundle.min.css",
               "src/assets/vendor/animate.css/animate.min.css"

@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-  
+
   form: FormGroup;
   searchValue!: string;
 

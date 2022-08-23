@@ -12,4 +12,8 @@ export class ListComponent implements OnInit {
   ngOnInit() {
   }
 
+  search(value:String){
+
+  }
+
 }
