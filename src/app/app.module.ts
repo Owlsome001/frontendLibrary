@@ -17,7 +17,6 @@ import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { AttendanceComponent } from './layout/content/attendance/attendance.component';
-import { PresenceComponent } from './layout/content/presence/presence.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +29,6 @@ import { PresenceComponent } from './layout/content/presence/presence.component'
     HomeComponent,
     ListComponent,
     AttendanceComponent,
-    PresenceComponent
   ],
   imports: [
     BrowserModule,
