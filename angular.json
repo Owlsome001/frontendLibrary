@@ -32,13 +32,18 @@
               "src/assets/css/bootstrap.min.css",
               "src/assets/vendor/aos/aos.css",
               "src/assets/vendor/swiper/swiper-bundle.min.css",
-              "src/assets/vendor/animate.css/animate.min.css"
+              "src/assets/vendor/animate.css/animate.min.css",
+              "src/assets/fontawesome-free-5.14.0-web/scss/fontawesome.scss",
+              "src/assets/fontawesome-free-5.14.0-web/css/all.css",
+              "src/assets/vendor/boxicons/boxicons.min.css"
             ],
             "scripts": [
               "src/assets/js/bootstrap.bundle.min.js",
               "src/assets/js/main.js",
               "src/assets/vendor/aos/aos.js",
-              "src/assets/vendor/isotope-layout/isotope.pkgd.min.js"
+              "src/assets/vendor/isotope-layout/isotope.pkgd.min.js",
+              "src/assets/fontawesome-free-5.14.0-web/js/all.min.js"
+
 
             ]
           },
