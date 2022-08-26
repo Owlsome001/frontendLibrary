@@ -23,10 +23,10 @@ export class BooksService {
     return this.http.get<Array<BookInfo>>(env.BASE_URL+"/books/?term="+searchValue,{
     })
 
-    
+
   }
   getBookDetails(isbn:string) :Observable<BookInfo> {
-    
+
     return this.http.get<BookInfo>(env.BASE_URL+"/books/"+isbn,{
     })
   }
