@@ -1,12 +1,12 @@
-<div  class="books">
+<div  class="books" *ngFor="let book of books">
   <div class="book">
     <div class="thumbnail">
-      <img src="../../../../assets/img/java-spring-le-socle-technique-des-applications-java-ee-3e-edition-9782409028649_XL.jpg" alt="thumbnail">
+      <img src={{book.largeCoverUrL}} alt="thumbnail">
     </div>
-    <div class="description">
-      <h1>Title</h1>
-      <h2>Subtitle</h2>
-      <p>description</p>
+
+    <div class="description" >
+      <h1>{{book.title}}</h1>
+      <h2>{{book.subtitle}}</h2>
     </div>
 
 

@@ -1,21 +1,21 @@
 export class BookInfo {
-    isbn:string;
+  isbn:string;
 	title:string;
 	subtitle:string;
 	authors:Array<string>;
 	publishedDate:string;
 	language:string;
-	coverURL:string;
+	largeCoverUrL:string;
 	bookStatus:string;
-	isRefence:string;
+	isReference:string;
 	description:string;
 	branch:string;
 	category:string;
 	bookcase:string;
-	pdfavailable:boolean;
+	pdfAvailable:boolean;
 	publisher:string;
 	pages:number;
-	
+
 	constructor(){
 	this.isbn="";
 	this.title="";
@@ -23,14 +23,14 @@ export class BookInfo {
 	this.authors= new Array;
 	this.publishedDate=""
 	this.language="";
-	this.coverURL=""
+	this.largeCoverUrL=""
 	this.bookStatus=""
-	this.isRefence="false"
+	this.isReference="false"
 	this.description="";
 	this.branch=""
 	this.category=""
 	this.bookcase="";
-	this.pdfavailable=false;
+	this.pdfAvailable=false;
 	this.publisher="";
 	this.pages=0;
 	}

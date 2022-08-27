@@ -10,7 +10,7 @@ import { BooksService } from 'src/app/services/http.service';
 })
 export class ListComponent implements OnInit {
   books!: Array<BookInfo>
-  constructor(private hppp : HttpClient) { }
+  constructor(private service : BooksService ) { }
 
   ngOnInit(
   ) {
@@ -21,8 +21,9 @@ export class ListComponent implements OnInit {
 
   }
   public getBook(){
-    this.hppp.get("http://localhost:8080/books").subscribe((data)=>{
-      console.log(data)
+    this.service.getBookList().subscribe((data)=>{
+      this.books=data;
+      console.log(this.books)
     })
   }
 
