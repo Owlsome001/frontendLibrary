@@ -5,7 +5,7 @@ export class BookInfo {
 	authors:Array<string>;
 	publishedDate:string;
 	language:string;
-	largeCoverUrL:string;
+	largeCoverUrl:string;
 	bookStatus:string;
 	isReference:string;
 	description:string;
@@ -23,7 +23,7 @@ export class BookInfo {
 	this.authors= new Array;
 	this.publishedDate=""
 	this.language="";
-	this.largeCoverUrL=""
+	this.largeCoverUrl=""
 	this.bookStatus=""
 	this.isReference="false"
 	this.description="";

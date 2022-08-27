@@ -1,15 +1,21 @@
-<div  class="books" *ngFor="let book of books">
-  <div class="book">
-    <div class="thumbnail">
-      <img src={{book.largeCoverUrL}} alt="thumbnail">
+<div  class="books" >
+    <ng-container *ngFor="let book of books">
+
+    <div class="book">
+      <div class="thumbnail">
+        <img src={{book.largeCoverUrl}} alt="thumbnail">
+      </div>
+
+      <div class="description" >
+        <h1>{{book.title}}</h1>
+        <h2>{{book.subtitle}}</h2>
+      </div>
+
+
+
     </div>
-
-    <div class="description" >
-      <h1>{{book.title}}</h1>
-      <h2>{{book.subtitle}}</h2>
-    </div>
+    </ng-container>
 
 
 
-  </div>
 </div>
