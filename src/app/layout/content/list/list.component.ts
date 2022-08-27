@@ -12,13 +12,15 @@ export class ListComponent implements OnInit {
   books!: Array<BookInfo>
   constructor(private hppp : HttpClient) { }
 
-  ngOnInit() {
+  ngOnInit(
+  ) {
+    this.getBook();
   }
 
   search(value:String){
 
   }
-  getBook(){
+  public getBook(){
     this.hppp.get("http://localhost:8080/books").subscribe((data)=>{
       console.log(data)
     })
