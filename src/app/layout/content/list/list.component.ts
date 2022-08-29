@@ -17,7 +17,7 @@ export class ListComponent implements OnInit {
     this.getBook();
   }
 
-  search(value:string){
+  public search(value:string){
     this.service.searchBooks(value).subscribe((data)=>{
       this.books=data;
     })

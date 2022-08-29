@@ -20,7 +20,7 @@ export class BooksService {
   }
   searchBooks(searchValue: string): Observable<Array<BookInfo>>{
 
-    return this.http.get<Array<BookInfo>>(env.BASE_URL+"/books/?term="+searchValue,{
+    return this.http.get<Array<BookInfo>>(env.BASE_URL+"/books/?keyword="+searchValue,{
     })
 
 
