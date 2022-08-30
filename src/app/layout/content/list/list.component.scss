@@ -2,62 +2,26 @@
 /*books for large screen*/
 @media only screen and (min-width: 992px){
   .books{
-    position: relative;
-    display: grid;
-    flex-wrap: wrap;
-    justify-content: center;
-    left: 0.3%;
-    right: 10%;
-    margin-top: 20px;
-    width: 80%;
-    height: 700px;
-    :hover{
-      cursor: pointer;
-      transform: translateY(-1.8px);
-
-    }
-  }
-  .book{
-    margin-left: 20px;
-    margin-top: 10px;
-    .description{
-      padding: 5px;
-      margin-top: 5px;
-      h1{
-        overflow: hidden;
-      }
-      p{
-        overflow: hidden;
-      }
-    }
-  }
-
-
-  }
-
-
-
-
-  /*For Tablet and other middle screen devices*/
-  @media only screen and (min-width: 601px) {
-
-  .books{
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
+  :hover{
+      cursor: pointer;
+      transform: translateY(-3px);
+    }
   }
+
   .book{
     background-color: rgba(255, 254, 254, 0.548);
+    margin: 10px;
     color: black;
     width: 200px;
     height: 300px;
-    padding: 5px;
     border-radius: 8px;
-    :hover{
 
-    }
     .thumbnail{
       width: 200px;
       height: 200px;
@@ -71,16 +35,20 @@
 
     }
     .description{
-      width: 100%;
        height: 120px;
        h1{
+        inline-size: 200px;
+        overflow: hidden;
         padding-top: 5px;
         font-size: 18px;
+        margin-left: 5px;
+        margin-right: 5px;
        }
        h2{
         white-space: nowrap;
         font-size: 14px;
         overflow: hidden;
+        inline-size: 200px;
        }
        p{
         font-size: 13px;
@@ -89,4 +57,119 @@
       }
 
   }
+  }
+
+
+
+
+
+  /*For Tablet and other middle screen devices*/
+  @media only screen and (min-width: 601px) {
+    .books{
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .book{
+      background-color: rgba(255, 254, 254, 0.548);
+      margin: 10px;
+      color: black;
+      width: 200px;
+      height: 300px;
+      padding: 5px;
+      border-radius: 8px;
+      :hover{
+
+      }
+      .thumbnail{
+        width: 200px;
+        height: 200px;
+        img{
+          color: rgba(0, 0, 0, 0.356);
+          width: 150px;
+          height: 200px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+        }
+
+      }
+      .description{
+        width: 100%;
+         height: 120px;
+         h1{
+          padding-top: 5px;
+          font-size: 18px;
+         }
+         h2{
+          white-space: nowrap;
+          font-size: 14px;
+          overflow: hidden;
+         }
+         p{
+          font-size: 13px;
+         }
+
+        }
+
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .books{
+      width: 90%;
+      margin-top: 20px;
+      margin-left: 5%;
+      margin-right: 5%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .book{
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      margin: 10px;
+      color: black;
+      width: 120px;
+      height: 160px;
+      :hover{
+
+      }
+      .thumbnail{
+
+        width: 120px;
+        height: 150px;
+        max-width: 130px;
+        img{
+          color: rgba(0, 0, 0, 0.356);
+          width: 120px;
+          height: 160px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+        }
+
+      }
+      .description{
+        display: none;
+        width: 200px;
+        height: 120px;
+         h1{
+          padding-top: 5px;
+          font-size: 18px;
+         }
+         h2{
+          white-space: nowrap;
+          font-size: 14px;
+          overflow: hidden;
+         }
+         p{
+          font-size: 13px;
+         }
+
+        }
+
+    }
+
   }

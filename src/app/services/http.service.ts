@@ -20,7 +20,7 @@ export class BooksService {
   }
   searchBooks(searchValue: string): Observable<Array<BookInfo>>{
 
-    return this.http.get<Array<BookInfo>>(env.BASE_URL+"/books/?keyword="+searchValue,{
+    return this.http.get<Array<BookInfo>>(env.BASE_URL+"/books/search/?keyword="+searchValue,{
     })
 
 
@@ -30,7 +30,7 @@ export class BooksService {
     return this.http.get<BookInfo>(env.BASE_URL+"/books/"+isbn,{
     })
   }
-
+//TODO
   handleError(error: HttpErrorResponse) {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {
