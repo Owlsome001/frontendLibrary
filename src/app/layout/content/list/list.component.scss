@@ -4,14 +4,13 @@
   .books{
     position: relative;
     display: grid;
-    column-gap: 20px;
-    row-gap: 20px;
+    flex-wrap: wrap;
     justify-content: center;
-    left: 0.1%;
+    left: 0.3%;
     right: 10%;
     margin-top: 20px;
     width: 80%;
-    height: 1000px;
+    height: 700px;
     :hover{
       cursor: pointer;
       transform: translateY(-1.8px);
@@ -19,11 +18,25 @@
     }
   }
   .book{
-    padding: 10%;
+    margin-left: 20px;
+    margin-top: 10px;
+    .description{
+      padding: 5px;
+      margin-top: 5px;
+      h1{
+        overflow: hidden;
+      }
+      p{
+        overflow: hidden;
+      }
+    }
   }
 
 
   }
+
+
+
 
   /*For Tablet and other middle screen devices*/
   @media only screen and (min-width: 601px) {
