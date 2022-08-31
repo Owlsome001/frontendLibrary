@@ -1,4 +1,6 @@
+import { Book } from './../../../models/models';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-book',
@@ -6,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./book.component.scss']
 })
 export class BookComponent implements OnInit {
-
-  constructor() { }
+  book!:Book;
+  constructor(private activetedRouter:ActivatedRoute) { }
 
   ngOnInit() {
   }

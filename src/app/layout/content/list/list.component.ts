@@ -12,7 +12,7 @@ import { BooksService } from 'src/app/services/http.service';
 export class ListComponent implements OnInit {
   p:number=1;
   books!: Array<BookInfo>
-  constructor(private service : BooksService, private router: Router ) { }
+  constructor(private service : BooksService) { }
 
   ngOnInit(
   ) {
@@ -32,7 +32,5 @@ export class ListComponent implements OnInit {
     })
   }
 
-  goToBookDetail(isbn: string){
-    this.router.navigateByUrl("search/book/:"+isbn);
-  }
+
   }
