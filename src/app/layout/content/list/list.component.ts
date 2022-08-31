@@ -9,6 +9,7 @@ import { BooksService } from 'src/app/services/http.service';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
+  p:number=1;
   books!: Array<BookInfo>
   constructor(private service : BooksService ) { }
 

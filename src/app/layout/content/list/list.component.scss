@@ -35,23 +35,23 @@
 
     }
     .description{
+      justify-content: center;
+      width: 100%;
        height: 120px;
+       margin-left: 10px;
        h1{
-        inline-size: 200px;
+        inline-size: 170px;
+        white-space:nowrap;
         overflow: hidden;
         padding-top: 5px;
         font-size: 18px;
         margin-left: 5px;
         margin-right: 5px;
+        text-overflow: ellipsis;
        }
        h2{
-        white-space: nowrap;
+        text-overflow: unset;
         font-size: 14px;
-        overflow: hidden;
-        inline-size: 200px;
-       }
-       p{
-        font-size: 13px;
        }
 
       }
@@ -97,19 +97,27 @@
 
       }
       .description{
+        justify-content: center;
+        word-wrap: break-word;
         width: 100%;
          height: 120px;
+         margin-left: 10px;
          h1{
+          inline-size: 170px;
+          white-space:nowrap;
+          overflow: hidden;
           padding-top: 5px;
           font-size: 18px;
+          margin-left: 5px;
+          margin-right: 5px;
+          text-overflow: ellipsis;
          }
          h2{
+          text-overflow: ellipsis;
           white-space: nowrap;
           font-size: 14px;
           overflow: hidden;
-         }
-         p{
-          font-size: 13px;
+          inline-size: 170px;
          }
 
         }
@@ -121,7 +129,7 @@
   @media only screen and (max-width: 600px) {
     .books{
       width: 90%;
-      margin-top: 20px;
+      margin-top: 5%;
       margin-left: 5%;
       margin-right: 5%;
       display: flex;
@@ -153,21 +161,6 @@
       }
       .description{
         display: none;
-        width: 200px;
-        height: 120px;
-         h1{
-          padding-top: 5px;
-          font-size: 18px;
-         }
-         h2{
-          white-space: nowrap;
-          font-size: 14px;
-          overflow: hidden;
-         }
-         p{
-          font-size: 13px;
-         }
-
         }
 
     }

@@ -1,5 +1,5 @@
 <div  class="books" >
-    <ng-container *ngFor="let book of books"  >
+    <ng-container *ngFor="let book of books | paginate: { itemsPerPage: 12, currentPage: p }"  >
 
     <div class="book">
       <div class="thumbnail">
@@ -15,6 +15,7 @@
 
     </div>
     </ng-container>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
 
 
 
