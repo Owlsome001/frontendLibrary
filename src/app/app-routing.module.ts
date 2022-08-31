@@ -11,11 +11,11 @@ const routes: Routes = [
     component: LayoutComponent,
   },
    {
-    path: 'details/:isbn',
+    path: 'book/details/:isbn',
     component: BookComponent,
   },
 
- 
+
 ];
 
 @NgModule({
