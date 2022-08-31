@@ -15,8 +15,11 @@
 
     </div>
     </ng-container>
+    <div *ngIf=books.length>
+          <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
 
-    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
 
 
 
