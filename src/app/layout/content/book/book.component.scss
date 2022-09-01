@@ -5,15 +5,25 @@
     margin: 120px;
     margin-top: 110px;
     justify-content: center;
+    .thumbnail{
+      img{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      }
+    }
     .section{
       width: 1500px;
       display: flex;
       flex-direction: row;
       .firstdetails{
         margin-left: 5%;
-        width: 40%;
+        width: 48%;
         h1{
           font-size: 20px;
+        }
+        p{
+          white-space:pre-wrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
         }
       }
     }
