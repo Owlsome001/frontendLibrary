@@ -36,6 +36,7 @@
         }
       }
     }
+
     .more{
       display: flex;
       flex-direction: column;
@@ -54,17 +55,14 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        flex-direction: column;
-        .language{
-          background-color: black;
+        div{
+          width: 150px;
+          margin-left: 6%;
         }
       }
 
       .description{
         width: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
       }
     }
   }
