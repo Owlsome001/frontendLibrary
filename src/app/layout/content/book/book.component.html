@@ -1,8 +1,51 @@
 <app-header ></app-header>
-<div>
-  <div class="thumbnail">
-    <img src="{{book.largeCoverUrl}} " alt="book">
+<div class="book">
+  <div class="section">
+    <div class="thumbnail">
+      <img src="{{book.largeCoverUrl}}" alt="thumbnail">
 
+    </div>
+    <div class="firstdetails">
+      <h1>
+        {{book.title}} - {{book.subtitle}}
+      </h1>
+      <p>{{book.description}}</p>
+      <button>
+      </button>
+    </div>
+  </div>
+  <div class="more">
+    <div class="descprition">
+      <h1>Description</h1>
+      <p>{{book.description}}</p>
+    </div>
+    <div class="Details">
+      <div class="language">
+        <h1>Language</h1>
+        <p>{{book.language}}</p>
+
+      </div>
+      <div class="isbn">
+        <h1>ISBN</h1>
+        <p>{{book.isbn}}</p>
+      </div>
+      <div class="publisher">
+        <h1>Publisher</h1>
+        <p>{{book.publisher}}</p>
+
+      </div>
+      <div class="publishedDate">
+        <h1>Published Date</h1>
+        <p>{{book.publishedDate}}</p>
+      </div>
+
+      <div class="publishedDate">
+        <h1>Page count</h1>
+        <p>{{book.pageCount}}</p>
+      </div>
+
+    </div>
   </div>
 </div>
+
 <app-footer ></app-footer>

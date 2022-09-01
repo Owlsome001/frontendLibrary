@@ -14,7 +14,7 @@ export class BookInfo {
 	bookcase:string;
 	pdfAvailable:boolean;
 	publisher:string;
-	pages:number;
+	pageCount:number;
 
 	constructor(){
 	this.isbn="";
@@ -32,6 +32,6 @@ export class BookInfo {
 	this.bookcase="";
 	this.pdfAvailable=false;
 	this.publisher="";
-	this.pages=0;
+	this.pageCount=0;
 	}
 }
