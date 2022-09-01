@@ -18,23 +18,54 @@
         margin-left: 5%;
         width: 48%;
         h1{
-          font-size: 20px;
+          font-size: 22px;
         }
-        p{
-          white-space:pre-wrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
+        button{
+          justify-content: center;
+          margin-top: 60px;
+          width: 100px;
+          height: 30px;
+          font-size: 16px;
+          color: white;
+          background-color: rgb(19, 41, 90);
+          border: none;
+          border-radius: 10px;
+          :hover{
+            background-color:  rgb(17, 24, 37);
+          }
         }
       }
     }
     .more{
+      display: flex;
+      flex-direction: column;
       width: 80%;
       margin-top: 40px;
+      i{
+        width: 40%;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+
       h1{
         font-size: 18px;
       }
+      .details{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        .language{
+          background-color: black;
+        }
+      }
+
       .description{
-        padding: 6px;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
       }
     }
   }
