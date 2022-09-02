@@ -63,6 +63,8 @@
             text-align: center;
           }
           p{
+            color: rgb(0, 0, 0);
+            font-weight: 400;
             text-align: center;
           }
           width: 150px;
@@ -71,6 +73,7 @@
       }
 
       .description{
+        border-top: 2px black;
         width: 100%;
     }
   }
