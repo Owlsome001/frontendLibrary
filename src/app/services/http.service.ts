@@ -1,9 +1,7 @@
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
-import { Book } from '../models/book.model';
 import { environment as env } from 'src/environments/environment';
-import { APIResponse } from '../models/models';
 import { BookInfo } from '../models/BookInfo';
 
 @Injectable({

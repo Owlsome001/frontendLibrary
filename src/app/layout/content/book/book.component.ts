@@ -1,4 +1,3 @@
-import { Book } from './../../../models/models';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BooksService } from 'src/app/services/http.service';

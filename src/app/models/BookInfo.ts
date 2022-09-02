@@ -1,8 +1,10 @@
+import { Author } from "./author.model";
+
 export class BookInfo {
   isbn:string;
 	title:string;
 	subtitle:string;
-	authors:Array<string>;
+	authors:Array<Author>;
 	publishedDate:string;
 	language:string;
 	largeCoverUrl:string;
