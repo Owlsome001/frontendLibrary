@@ -2,7 +2,8 @@
 @media only screen and (min-width: 992px){
   .book{
     width: 100%;
-    margin: 120px;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 110px;
     justify-content: center;
     .thumbnail{
@@ -56,7 +57,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        background-color: gray;
+        background-color: rgba(128, 128, 128, 0.582);
         padding-top: 15px;
         div{
           h1{
@@ -64,11 +65,11 @@
           }
           p{
             color: rgb(0, 0, 0);
-            font-weight: 400;
+            font-weight: 600;
             text-align: center;
           }
-          width: 150px;
-          margin-left: 6%;
+          width: 15%;
+          margin-left: 4%;
         }
       }
 
