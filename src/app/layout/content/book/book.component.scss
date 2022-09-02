@@ -43,8 +43,9 @@
       width: 80%;
       margin-top: 40px;
       i{
-      padding-left: 2%;
+        width: 100%;
        font-size: 30px;
+       text-align: center;
       }
 
       h1{
@@ -55,7 +56,15 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        background-color: gray;
+        padding-top: 15px;
         div{
+          h1{
+            text-align: center;
+          }
+          p{
+            text-align: center;
+          }
           width: 150px;
           margin-left: 6%;
         }
@@ -63,8 +72,8 @@
 
       .description{
         width: 100%;
-      }
     }
+  }
   }
 
   }
