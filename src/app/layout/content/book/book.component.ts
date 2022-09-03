@@ -3,6 +3,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { BooksService } from 'src/app/services/http.service';
 import { BookInfo } from 'src/app/models/BookInfo';
 import { DomSanitizer } from "@angular/platform-browser";
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Component({
   selector: 'app-book',
