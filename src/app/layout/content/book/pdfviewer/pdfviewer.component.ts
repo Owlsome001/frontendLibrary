@@ -12,7 +12,7 @@ import {  } from '@angular/core';
 })
 export class PdfviewerComponent implements OnInit {
   book!:BookInfo
-  pdfFilePath!: string;
+  pdfFilePath:any
 
   constructor(private activatedRouter:ActivatedRoute, private http: BooksService,private sanitizer: DomSanitizer) {
 
@@ -24,8 +24,8 @@ export class PdfviewerComponent implements OnInit {
   getpdf(){
     this.http.getBookDetails(this.activatedRouter.snapshot.paramMap.get("isbn")+"").subscribe((data)=>{
       this.book=data;
+      this.pdfFilePath=this.sanitizer.bypassSecurityTrustResourceUrl(this.book.pdfurl);
+      console.log(this.pdfFilePath)
     })
-    this.pdfFilePath=(this.book.pdfurl);
-    console.log(this.pdfFilePath)
   }
 }
