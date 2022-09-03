@@ -17,6 +17,7 @@ import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { AttendanceComponent } from './layout/content/attendance/attendance.component';
+import { SafePipe } from './safe.pipe';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { AttendanceComponent } from './layout/content/attendance/attendance.comp
     HomeComponent,
     ListComponent,
     AttendanceComponent,
+    SafePipe,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,7 @@ import { AttendanceComponent } from './layout/content/attendance/attendance.comp
     BrowserModule,
     HttpClientModule,
     NgxPaginationModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
   ],
   providers: [
     {

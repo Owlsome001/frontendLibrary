@@ -9,6 +9,11 @@
       <h1>
         {{book.title}} - {{book.subtitle}}
       </h1>
+      <div *ngIf="book.pdfurl">
+        <button  class="readnow" role="button" [routerLink]="['ebook/:{{book.pdfurl}}']"
+        routerLinkActive="router-link-active" >Read now</button>
+      </div>
+
 
     </div>
   </div>

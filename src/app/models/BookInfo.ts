@@ -17,6 +17,7 @@ export class BookInfo {
 	pdfAvailable:boolean;
 	publisher:string;
 	pageCount:number;
+  pdfurl:string;
 
 	constructor(){
 	this.isbn="";
@@ -35,5 +36,6 @@ export class BookInfo {
 	this.pdfAvailable=false;
 	this.publisher="";
 	this.pageCount=0;
+  this.pdfurl="";
 	}
 }

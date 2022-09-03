@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { BooksService } from 'src/app/services/http.service';
 import { BookInfo } from 'src/app/models/BookInfo';
+import { DomSanitizer } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-book',
@@ -10,7 +11,7 @@ import { BookInfo } from 'src/app/models/BookInfo';
 })
 export class BookComponent implements OnInit {
   book!:BookInfo;
-  constructor(private activatedRouter:ActivatedRoute, private http : BooksService ) { }
+  constructor(private activatedRouter:ActivatedRoute, private http : BooksService) { }
 
   ngOnInit() {
     //This module will help me to get the param in the URL
