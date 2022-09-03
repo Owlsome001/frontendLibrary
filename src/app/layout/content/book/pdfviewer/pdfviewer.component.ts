@@ -2,7 +2,7 @@ import { BookInfo } from 'src/app/models/BookInfo';
 import { Component, OnInit,Pipe, PipeTransform} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BooksService } from 'src/app/services/http.service';
-import { DomSanitizer, SafeUrl } from "@angular/platform-browser";
+import { DomSanitizer, SafeResourceUrl, SafeUrl } from "@angular/platform-browser";
 import {  } from '@angular/core';
 
 @Component({
@@ -12,7 +12,7 @@ import {  } from '@angular/core';
 })
 export class PdfviewerComponent implements OnInit {
   book!:BookInfo
-  pdfFilePath:any
+  pdfFilePath!:SafeResourceUrl
 
   constructor(private activatedRouter:ActivatedRoute, private http: BooksService,private sanitizer: DomSanitizer) {
 
