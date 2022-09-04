@@ -3,13 +3,13 @@ import { Component, OnInit,Pipe, PipeTransform} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BooksService } from 'src/app/services/http.service';
 import { DomSanitizer, SafeResourceUrl, SafeUrl } from "@angular/platform-browser";
-import {  } from '@angular/core';
 
 @Component({
   selector: 'app-pdfviewer',
   templateUrl: './pdfviewer.component.html',
-  styleUrls: ['./pdfviewer.component.css']
+  styleUrls: ['./pdfviewer.component.scss'],
 })
+
 export class PdfviewerComponent implements OnInit {
   book!:BookInfo
   pdfFilePath!:SafeResourceUrl

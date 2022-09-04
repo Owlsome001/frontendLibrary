@@ -19,6 +19,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { AttendanceComponent } from './layout/content/attendance/attendance.component';
 import { SafePipe } from './safe.pipe';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,8 @@ import { SafePipe } from './safe.pipe';
     ListComponent,
     AttendanceComponent,
     SafePipe,
+
+
   ],
   imports: [
     BrowserModule,
@@ -56,4 +59,6 @@ import { SafePipe } from './safe.pipe';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ }
