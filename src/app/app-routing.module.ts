@@ -1,3 +1,4 @@
+import { PdfviewerComponent } from './layout/content/book/pdfviewer/pdfviewer.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AttendanceComponent } from './layout/content/attendance/attendance.component';
@@ -11,11 +12,14 @@ const routes: Routes = [
     component: LayoutComponent,
   },
    {
-    path: 'details/:isbn',
+    path: 'book/details/:isbn',
     component: BookComponent,
   },
+  {
+    path: 'book/details/:isbn/ebook/:pdfurl',
+    component: PdfviewerComponent,
+  },
 
- 
 ];
 
 @NgModule({

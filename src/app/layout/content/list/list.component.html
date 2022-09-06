@@ -1,7 +1,7 @@
 <div  class="books" >
-    <ng-container *ngFor="let book of books"  >
+    <ng-container *ngFor="let book of books | paginate: { itemsPerPage: 12, currentPage: p }"  >
 
-    <div class="book">
+    <div class="book" routerLink="book/details/{{book.isbn}}">
       <div class="thumbnail">
         <img src={{book.largeCoverUrl}} alt="thumbnail">
       </div>
@@ -15,6 +15,11 @@
 
     </div>
     </ng-container>
+    <div *ngIf=books.length>
+          <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+
+
 
 
 

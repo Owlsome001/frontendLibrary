@@ -1,20 +1,24 @@
 
 @media only screen and (min-width: 992px){
-
 .content {
+  background-color: gray;
 	  max-width: 100%;
     min-width: 80%;
-    height: auto;
     overflow: hidden;
     display: flex; /*added*/
     flex-direction: column; /*added*/
-    img{
-    width: 100%;
-    height: 500px;
-    object-position: center;
-    object-fit: cover;
-	}
+
+    .image{
+      img{
+        height: 1420px;
+         width: 100%;
+        object-position: center;
+        object-fit: cover;
+      }
+
+	  }
     border-color: rgba(78, 78, 78, 0.575);
+
 
 }
 .main{
@@ -39,9 +43,6 @@
 	top: 25%;
 	left: 10%;
     right: 10%;
-
-}
-.booklist{
 
 }
 .input-group input{
@@ -79,13 +80,14 @@
         overflow: hidden;
         display: flex; /*added*/
         flex-direction: column; /*added*/
-        img{
-        width: 100%;
-        height: 1100px;
-        min-height: 200%;
-        image-rendering: auto;
-        object-position: center;
-        object-fit: cover;
+        .image{
+          img{
+            height: 1420px;
+             width: 100%;
+            object-position: center;
+            object-fit: cover;
+          }
+
         }
         border-color: rgba(78, 78, 78, 0.575);
 
@@ -141,13 +143,14 @@
         overflow: hidden;
         display: flex; /*added*/
       flex-direction: column; /*added*/
+      .image{
         img{
-        width: 100%;
-        height: 1250px;
-        image-rendering: auto;
-        object-position: center;
-        object-fit: cover;
+          height: 1500px;
+           width: 100%;
+          object-position: center;
+          object-fit: cover;
         }
+      }
         border-color: rgba(78, 78, 78, 0.575);
 
 

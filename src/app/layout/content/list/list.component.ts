@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { BookInfo } from 'src/app/models/BookInfo';
 import { BooksService } from 'src/app/services/http.service';
 
@@ -9,8 +10,9 @@ import { BooksService } from 'src/app/services/http.service';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
+  p:number=1;
   books!: Array<BookInfo>
-  constructor(private service : BooksService ) { }
+  constructor(private service : BooksService, private router:Router) { }
 
   ngOnInit(
   ) {
@@ -29,5 +31,8 @@ export class ListComponent implements OnInit {
       console.log(this.books)
     })
   }
+  public goAtBookComponent(isbn:string){
+    this.router.navigate(["book/details/"],{queryParams:{isbn}})
+  }
 
-}
+  }

@@ -1,8 +1,10 @@
+import { Author } from "./author.model";
+
 export class BookInfo {
   isbn:string;
 	title:string;
 	subtitle:string;
-	authors:Array<string>;
+	authors:Array<Author>;
 	publishedDate:string;
 	language:string;
 	largeCoverUrl:string;
@@ -14,7 +16,8 @@ export class BookInfo {
 	bookcase:string;
 	pdfAvailable:boolean;
 	publisher:string;
-	pages:number;
+	pageCount:number;
+  pdfurl:string;
 
 	constructor(){
 	this.isbn="";
@@ -32,6 +35,7 @@ export class BookInfo {
 	this.bookcase="";
 	this.pdfAvailable=false;
 	this.publisher="";
-	this.pages=0;
+	this.pageCount=0;
+  this.pdfurl="";
 	}
 }
