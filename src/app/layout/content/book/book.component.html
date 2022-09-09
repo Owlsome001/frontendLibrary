@@ -9,6 +9,13 @@
       <h1>
         {{book.title}} - {{book.subtitle}}
       </h1>
+      <div>
+        <ng-container *ngFor="let author of book.authors">
+          <p>{{author.name}}</p>
+        </ng-container>
+      </div>
+
+
       <div *ngIf="book.pdfurl">
         <button  class="readnow" role="button" [routerLink]="['ebook/:{{book.pdfurl}}']"
         routerLinkActive="router-link-active" >Read now</button>
