@@ -20,6 +20,18 @@
         h1{
           font-size: 22px;
         }
+        .authors{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .author{
+                margin-right: 10px;
+            }
+            p{
+
+            }
+        }
+
       }
     }
 

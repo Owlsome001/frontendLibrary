@@ -9,9 +9,12 @@
       <h1>
         {{book.title}} - {{book.subtitle}}
       </h1>
-      <div>
+      <div class="authors">
         <ng-container *ngFor="let author of book.authors">
-          <p>{{author.name}}</p>
+          <div class="author">
+            <p>{{author.name}}</p>
+          </div>
+
         </ng-container>
       </div>
 
