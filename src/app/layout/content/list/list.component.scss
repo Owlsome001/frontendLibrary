@@ -2,32 +2,25 @@
 /*books for large screen*/
 @media only screen and (min-width: 992px){
   .books{
-    height: 100px;
-    position: absolute;
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 10%;
-  :hover{
-      cursor: pointer;
-      transform: translateY(-3px);
-    }
   }
-
   .book{
     background-color: rgba(255, 254, 254, 0.548);
     margin: 10px;
     color: black;
     width: 200px;
     height: 300px;
+    padding: 5px;
     border-radius: 8px;
 
     .thumbnail{
       width: 200px;
-      height: 290px;
+      height: 200px;
       img{
         color: rgba(0, 0, 0, 0.356);
         width: 150px;
@@ -39,8 +32,9 @@
     }
     .description{
       justify-content: center;
+      word-wrap: break-word;
       width: 100%;
-       height: 80px;
+       height: 120px;
        margin-left: 10px;
        h1{
         inline-size: 170px;
@@ -53,13 +47,17 @@
         text-overflow: ellipsis;
        }
        h2{
-        text-overflow: unset;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         font-size: 14px;
+        overflow: hidden;
+        inline-size: 170px;
        }
 
       }
 
   }
+
     .pagination{
       display: inline-flex;
       width: 350px;
@@ -79,7 +77,7 @@
 
 
   /*For Tablet and other middle screen devices*/
-  @media only screen and (min-width: 601px) {
+  @media only screen and (max-width: 991px) {
     .books{
       margin-top: 20px;
       display: flex;
@@ -139,6 +137,19 @@
 
     }
 
+    .pagination{
+      display: inline-flex;
+      width: 350px;
+      margin-top: 20px;
+      padding-top: 10px;
+      height: 50px;
+      border-radius: 50px;
+      background-color: rgba(0, 0, 0, 0.808);
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
   }
 
   @media only screen and (max-width: 600px) {
@@ -152,24 +163,18 @@
       justify-content: center;
     }
     .book{
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      box-shadow: none;
       margin: 10px;
       color: black;
       width: 120px;
-      height: 160px;
-      :hover{
-
-      }
+      height: 150px;
       .thumbnail{
 
         width: 120px;
         height: 150px;
-        max-width: 130px;
         img{
-          color: rgba(0, 0, 0, 0.356);
           width: 120px;
-          height: 160px;
-          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          height: 150px;
 
         }
 
@@ -178,6 +183,18 @@
         display: none;
         }
 
+    }
+    .pagination{
+      display: inline-flex;
+      width: 350px;
+      margin-top: 20px;
+      padding-top: 10px;
+      height: 50px;
+      border-radius: 50px;
+      background-color: rgba(0, 0, 0, 0.808);
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
     }
 
   }

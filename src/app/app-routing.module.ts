@@ -23,7 +23,7 @@ const routes: Routes = [
   },
 
   {
-    path: 'book/details/:isbn/ebook/:pdfurl',
+    path: 'details/:isbn/ebook/:pdfurl',
     component: PdfviewerComponent,
   },
 

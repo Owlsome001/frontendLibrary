@@ -1,4 +1,4 @@
-<div class="content">
+<section class="content">
       <div class="image">
         <img src="../../../assets/img/pexels-pixabay-256541.jpg" alt="">
       </div>
@@ -13,7 +13,7 @@
         <form action="">
           <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
             <div class="input-group">
-              <input type="text" placeholder="What're you searching for ?" aria-describedby="button-addon1" class="form-control border-0 bg-light" style="font-weight: 500; font-size: 15px;" #search>
+              <input type="text" placeholder="What're you searching for ?" aria-describedby="button-addon1" class="form-control border-0 bg-light" style="font-size: 1em; padding-left: 20px;" #search>
 
               <div class="input-group-append">
                 <button id="button-addon1" type="submit" class="btn btn-link text-primary" (click)="appListBooks.search(search.value)"><i class="fa fa-search"></i></button>
@@ -31,4 +31,4 @@
     <div class="booklist">
       <app-list #appListBooks ></app-list>
     </div>
-  </div>
+</section>
