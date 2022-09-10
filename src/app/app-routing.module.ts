@@ -11,10 +11,17 @@ const routes: Routes = [
     path: '',
     component: LayoutComponent,
   },
-   {
-    path: 'book/details/:isbn',
+
+  {
+    path: 'catalog',
+    component: LayoutComponent,
+  },
+
+  {
+    path: 'details/:isbn',
     component: BookComponent,
   },
+
   {
     path: 'book/details/:isbn/ebook/:pdfurl',
     component: PdfviewerComponent,
