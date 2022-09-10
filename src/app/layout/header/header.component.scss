@@ -105,6 +105,11 @@
   color: #d88757;
   border-color: #e4dad4e1;
   border-bottom: 2px solid #fff;
+  :active{
+    color: #d88757;
+    border-color: #e4dad4e1;
+    border-bottom: 2px solid #fff;
+  }
 }
 .navbar .dropdown ul {
   display: block;

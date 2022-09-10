@@ -29,7 +29,6 @@
     font-size: 22px;
 
     justify-content: center;
-
     ::placeholder{
         margin-left: 25px;
         font-size: 90px;
@@ -48,10 +47,13 @@
 .input-group input{
     width: 200px;
     border-radius: 20px;
-    color: green;
+    color: rgb(0, 0, 0);
     :focus{
         background-color: none
     }
+}
+input[type=text] {
+  font-size: 100px;
 }
 
 

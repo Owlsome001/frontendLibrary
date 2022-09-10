@@ -36,7 +36,7 @@
               "src/assets/vendor/boxicons/css/boxicons.min.css",
               "src/assets/vendor/glightbox/css/glightbox.min.css",
               "src/assets/vendor/swiper/swiper-bundle.min.css",
-              "src/assets/fontawesome-free-5.14.0-web/css/all.css"
+              "src/assets/fontawesome-free-5.14.0-web/css/fontawesome.css"
             ],
             "scripts": [
              "src/assets/vendor/aos/aos.js",
