@@ -1,5 +1,5 @@
 /**
-* Template Name: Restaurantly - v3.7.0
+* Template Name: Restaurantly - v3.8.0
 * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
