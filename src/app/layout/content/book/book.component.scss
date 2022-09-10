@@ -37,22 +37,20 @@
       flex-direction: column;
       width: 80%;
       margin-top: 40px;
-      i{
-        width: 100%;
-       font-size: 30px;
-       text-align: center;
-      }
-
       h1{
         font-size: 18px;
       }
       .details{
+        text-align: center;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         background-color: rgba(128, 128, 128, 0.582);
         padding-top: 15px;
+        i{
+          font-size: 28px;
+        }
         div{
           h1{
             text-align: center;
@@ -157,6 +155,7 @@
         }
         .details{
           width: 100%;
+          text-align: center;
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
@@ -263,6 +262,7 @@
           font-size: 18px;
         }
         .details{
+          text-align: center;
           width: 100%;
           display: flex;
           flex-wrap: wrap;
