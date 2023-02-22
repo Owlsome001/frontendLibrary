@@ -28,7 +28,7 @@ export class BooksService {
     return this.http.get<BookInfo>(env.BASE_URL+"/books/"+isbn,{
     })
   }
-//TODO
+
   handleError(error: HttpErrorResponse) {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {
